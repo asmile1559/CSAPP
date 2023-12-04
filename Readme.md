@@ -10,7 +10,7 @@
 
 # 参考资源
 
-[CSAPP视频教程](【2015 CMU 15-213 CSAPP 深入理解计算机系统 课程视频】 https://www.bilibili.com/video/BV1iW411d7hd/?share_source=copy_web&vd_source=51c71b6bfa7dec49dc80c06885da3aa7)
+[CSAPP视频教程](https://www.bilibili.com/video/BV1iW411d7hd/?share_source=copy_web&vd_source=51c71b6bfa7dec49dc80c06885da3aa7)
 
 [CSAPP自学实验](https://csapp.cs.cmu.edu/3e/labs.html)
 
