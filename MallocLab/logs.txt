@@ -1,0 +1,60 @@
+gdb ./mdriver
+
+b mm_init
+b mm_malloc
+b mm_free
+b mm_realloc
+
+r -f short1-bal.rep
+
+n
+
+x /40xg heap_list
+
+x /20xw atable
+atable -> 0xf699f020p
+
+header -> 0xf699f04c
+bp -> 0xf699f050
+footer -> 0xf69a0050
+epilogue -> 0xf69a0054
+
+(gdb) x /40xw heap_list
+0xf699f010:     0x00000000      0x00000009      0x00000009      0x00000031
+0xf699f020:     0x00000000      0x00000000      0x00000000      0x00000000
+0xf699f030:     0x00000000      0x00000000      0x00000000      0x00000000
+0xf699f040:     0x00000000      0x00000000      0x00000031      0x00000001
+
+atable:
+                AT16    20      AT32    24      AT64    28      AT128   2c
+0xf699f020:     0x00000000      0x00000000      0x00000000      0x00000000
+                AT256   20      AT512   34      AT1024  34      AT2048  38
+0xf699f030:     0x00000000      0x00000000      0x00000000      0x00000000
+                AT4096  40      ATM     44
+0xf699f040:     0x00000000      0x00000000      0x00000031      0x00000001
+0xf699f050:     0x00000000      0x00000000      0x00000000      0x00000000
+0xf699f060:     0x00000000      0x00000000      0x00000000      0x00000000
+
+
+
+3456->3584
+
+
+prev_blkh:
+x /8xw (oldptr - ((*(int *)((char *)oldptr - 8)) & (~0x7))  - 4)
+x /8xw (newptr - ((*(int *)((char *)newptr - 8)) & (~0x7))  - 4)
+
+next_blkh:
+x /8xw (oldptr + ((*(int *)((char *)oldptr - 4)) & (~0x7)) - 4)
+x /8xw (newptr + ((*(int *)((char *)newptr - 4)) & (~0x7)) - 4)
+
+blkh:
+x /8xw (oldptr - 4)
+
+3456
+old: 0xf69a0b68,  0xf69a0b68
+new: 0xf699f160,  0xf699f160
+
+
+3456: 0xf699fddc
+x /8xw (bp + ((*(int *)((char *)bp - 4)) & (~0x7)) - 4)

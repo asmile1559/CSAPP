@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "assert.h": "c",
+        "cachelab.h": "c",
+        "stdint.h": "c",
+        "cstdint": "c"
+    }
+}

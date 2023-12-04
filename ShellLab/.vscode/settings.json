@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "thread": "c",
+        "signal.h": "c",
+        "features.h": "c",
+        "wait.h": "c",
+        "unistd.h": "c",
+        "string": "c",
+        "time.h": "c"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "memlib.h": "c",
+        "unistd.h": "c",
+        "cstdlib": "c",
+        "*.tcc": "c",
+        "memory": "c",
+        "*.txx": "c",
+        "array": "c",
+        "bitset": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "utility": "c",
+        "stdint-gcc.h": "c"
+    }
+}

@@ -1,0 +1,40 @@
+phase_2: 
+rsp: 0x7fffffffda60
+    read_six_numbers: 
+    rsp0: 0x7fffffffda58
+    rsp1: 0x7fffffffda40
+
+    rsi = 0x7fffffffda60
+    rdx = 0x7fffffffda60
+    rcx = 0x7fffffffda64 (rsi + 0x4)
+    (rsp + 0x08) 0x7fffffffda48 = 0x7fffffffda74
+    (rsp) 0x7fffffffda40 =  0x7fffffffda70
+    r9 = 0x7fffffffda6c
+    r8 = 0x7fffffffda68
+    esi = 0x4025c3
+
+phase_2:
+    p3 = 0x7fffffffda60
+    p4 = 0x7fffffffda64
+    p5 = 0x7fffffffda68
+    p6 = 0x7fffffffda6c
+    p7 = 0x7fffffffda70
+    p8 = 0x7fffffffda74
+
+phase_3:
+
+phase_4:
+    1 = 0x7fffffffda88
+    2 = 0x7fffffffda8c
+
+
+phase_6:
+    0x7fffffffda20:
+    x /40dw 0x6032d0
+
+0x6032d0 <node1>:       332     1       6304480 0
+0x6032e0 <node2>:       168     2       6304496 0
+0x6032f0 <node3>:       924     3       6304512 0
+0x603300 <node4>:       691     4       6304528 0
+0x603310 <node5>:       477     5       6304544 0
+0x603320 <node6>:       443     6       0       0

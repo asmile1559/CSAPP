@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "csapp.h": "c",
+        "signal.h": "c",
+        "dirent.h": "c",
+        "setjmp.h": "c",
+        "time.h": "c",
+        "features.h": "c",
+        "netdb.h": "c",
+        "array": "c",
+        "bitset": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "utility": "c"
+    }
+}
